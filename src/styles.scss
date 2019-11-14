@@ -1,0 +1,53 @@
+////// Global variables
+////$family-sans-serif: null;
+
+//$primary: #0088a9;
+//$link: green;
+//
+//$dark: $grey-dark;
+////
+////// Component variables
+////$control-border-width: 2px;
+////$input-background-color: $beige-lighter;
+////$input-border-color: transparent;
+////$input-shadow: none;
+
+// Libraries
+@import "~minireset.css/minireset";
+
+// Global variables
+//// Colors
+$grey-dark: #131418;
+$grey-light: #1e1f26;
+$text-primary: #ffffff;
+$text-secondary: #868ca0;
+
+//// Generic classes
+.grey-dark {
+  background-color: $grey-dark;
+  color: $text-primary;
+}
+
+.grey-light {
+  background-color: $grey-light;
+  color: $text-primary;
+}
+
+html {
+  height: 100%;
+  overflow-y: auto;
+}
+
+body {
+  min-height: 100%;
+  background-color: $grey-dark;
+  color: $text-primary;
+}
+
+.header {
+  //background: linear-gradient(to top right, #524ad0 10%, #D099FA);
+
+  .content {
+
+  }
+}

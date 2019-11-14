@@ -4,7 +4,9 @@
   "description": "I didn't find any site to properly convert camelCase into SCREAMING_SNAKE_CASE, so I did mine.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm dist/bundle.js",
+    "build": "webpack -p --mode production",
+    "start": "webpack-dev-server --hot --mode development"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,28 @@
   "bugs": {
     "url": "https://github.com/branchard/another-online-case-converter/issues"
   },
-  "homepage": "https://github.com/branchard/another-online-case-converter#readme"
+  "homepage": "https://github.com/branchard/another-online-case-converter#readme",
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.10.2",
+    "@types/lodash": "^4.14.144",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-hot-loader": "^4.12.15"
+  }
 }
